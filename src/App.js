@@ -11,18 +11,24 @@ const App = () => {
     setClasses(classList)
   }, [])
 
+  /**
+   * function to reomve class container on clicke
+   */
   const handleRemove = (id) => {
-    console.log({id})
-      let tempClasses = [...classes];
-      tempClasses.splice(id, 1);
-      setClasses(tempClasses);
+    let tempClasses = [...classes];
+    tempClasses.splice(id, 1);
+    setClasses(tempClasses);
   }
-  
+  /**
+   * function to handle form submission to add new class
+   */
   const handleSubmit = (newClass) => {
     setClasses([...classes, newClass]);
   }
-  
-  console.log({classes});
+
+  /** 
+  * added key to map to Clear the error that is coming up in the console. 
+  */
   return (
     <Wrapper>
       <NavBar />
@@ -52,6 +58,9 @@ const ClassCard = ({content, onRemove, index}) => (
   </ClassCardWrapper>
 )
 
+/**
+ * modified styles to fix text cut off and grid display
+ */
 const Wrapper = styled.div `
   text-align: center;
   max-width: 1100px;

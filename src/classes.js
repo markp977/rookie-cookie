@@ -1,3 +1,6 @@
+/**
+ * motified to fix issue with images not showing due to typo
+ */
 export default [
   {
     id: 1,

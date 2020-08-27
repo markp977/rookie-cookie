@@ -32,6 +32,9 @@ const ImageGrid = ({showImageList, featuredimageList, onSelectFeaturedImage}) =>
 	)
 }
 
+/***
+ * Using unsplash-js plug in to return results based on input search term
+ */
 const imageSearch = (term) => {
 	unsplash.search.photos(term, 1, 10, { orientation: "portrait" })
 	.then(res => res.json())
