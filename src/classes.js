@@ -34,5 +34,5 @@ export default [
     duration: 35,
     featureImage: 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2014/8/19/0/WU0809_Twice-Baked-Potato-Casserole_s4x3.jpg.rend.hgtvcom.966.773.suffix/1429279262392.jpeg',
     classType: 'live'
-  }
+  },
 ]
